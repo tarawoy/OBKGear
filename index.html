@@ -75,34 +75,34 @@
 
         const PARTS_DATABASE = {
             ENGINE: [
-                { name: "Advanced Engine", stats: { Speed: 1, StartBoost: 1, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, UltCharge: 20, SlipStreamRadius: 1, SlipStreamSpd: 1, T3: 1 } },
-                { name: "Banker Engine", stats: { Speed: -0.2, StartBoost: -0.5, CoinBoostSpd: -5, StartCoins: 3, MaxCoins: 10, DriftSteer: -2, Steer: -2, BoostPads: 10, T3: -0.5, MaxCoinsSpd: 2 } },
+                { name: "Advanced Engine", stats: { T3: 1, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, Speed: 1, UltCharge: 20, SlipStreamSpd: 3.5 } },
+                { name: "Banker Engine", stats: { BoostPads: 10, T2: -0.5, StartBoost: -5, StartCoins: 3, MaxCoins: 10, MaxCoinsSpd: 2, DriftSteer: -2, Steer: -2, Speed: -0.2 } },
                 { name: "Basic Engine", stats: { Speed: 0.5 } },
-                { name: "Scrapwork Engine", stats: { Speed: 1.6, StartBoost: 0.5, DriftSteer: -5, Steer: -4, UltCharge: 35, SlipStreamRadius: 2, T3: 0.5, MaxCoinsSpd: -5, DriftRate: -0.8 } },
-                { name: "Chrome Engine", stats: { Speed: 0.5, StartBoost: 1.6, CoinBoostSpd: 10, T3: 1.6 } },
-                { name: "Clean Engine", stats: { DriftSteer: 0.5, Steer: 0.5, UltCharge: 100, T1: 0.4, T2: 0.5, TrickSpd: 5 } },
-                { name: "Cyber Engine", stats: { Speed: 0.5, StartBoost: 1.2, DriftSteer: 0.5, Steer: 0.5, UltCharge: 5, T3: 1.2, TrickSpd: 5 } },
-                { name: "Featherweight Engine", stats: { Speed: 0.3, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, SlowAreaPenalty: -12, UltCharge: 30, T1: 0.8, TrickSpd: 5 } },
-                { name: "Fresh Engine", stats: { StartCoins: 0.2, DriftSteer: 0.3, BoostPads: 4, TrickSpd: 3.2 } },
-                { name: "Frontrunner Engine", stats: { Speed: -0.2, StartBoost: 1, CoinBoostSpd: 15, CoinBoostTime: 10, StartCoins: 0.5, MaxCoins: 1, DriftSteer: 1.4, T3: 1, MaxCoinsSpd: -1 } },
-                { name: "Spooky Engine", stats: { Speed: 0.6, StartBoost: 10, T1: 0.6, TrickSpd: 3 } },
-                { name: "Heavyweight Engine", stats: { Speed: 1.3, CoinBoostSpd: 5, CoinBoostTime: 0.5, StartCoins: 2, MaxCoins: 5, DriftSteer: -4.5, Steer: -3.5, SlowAreaPenalty: 50, MaxCoinsSpd: 0.8, TrickSpd: -3 } },
-                { name: "Vulcan Engine", stats: { Speed: 0.5, StartBoost: 1, StartCoins: -1, MaxCoins: 0.5, DriftSteer: -2, SlowAreaPenalty: 100, DriftRate: 2.5 } },
-                { name: "No Coiner Engine", stats: { Speed: 3.2, StartBoost: 1, CoinBoostSpd: -10, StartCoins: -2, MaxCoins: -5.2, T2: 1.5, T3: 1, TrickSpd: 4 } },
-                { name: "Piggybank Engine", stats: { StartCoins: 2, MaxCoins: 10, DriftSteer: -2.7, MaxCoinsSpd: 4.5 } },
-                { name: "Scrap Engine", stats: { Speed: 0, T1: 0.4, T2: 0.5, T3: 0.5, TrickSpd: 3.5 } },
-                { name: "Silver Engine", stats: { Speed: 0, T1: 0.5, T2: 0.7, T3: 1.4 } },
-                { name: "Snail Engine", stats: { Speed: 8, DriftSteer: -2.5, Steer: 50, AirDriftTime: -30, SlowAreaPenalty: 18, Daze: 30, UltCharge: 7, SlipStreamRadius: 0.8, BoostPads: 10 } },
-                { name: "Starter Engine", stats: { Speed: 0.6, StartCoins: 1, DriftSteer: 0.6, T1: 0.8 } }
+                { name: "Scrapwork Engine", stats: { T1: -0.8, T2: -1, T3: 0.5, DriftSteer: -5, Steer: -4, Speed: 1.6, UltCharge: 35, SlipStreamRadius: 2 } },
+                { name: "Chrome Engine", stats: { T3: 1.6, StartBoost: 10, Speed: 0.5 } },
+                { name: "Clean Engine", stats: { T1: 0.4, T2: 0.5, DriftSteer: 0.5, Steer: 0.5, UltCharge: 100, TrickSpd: 5 } },
+                { name: "Cyber Engine", stats: { T3: 1.2, DriftSteer: 0.5, Steer: 0.5, Speed: 0.5, TrickSpd: 5 } },
+                { name: "Featherweight Engine", stats: { T1: 0.8, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, Speed: 0.3, SlowAreaPenalty: -12, UltCharge: 30, TrickSpd: 5 } },
+                { name: "Fresh Engine", stats: { BoostPads: 4, DriftSteer: 0.2, Speed: 0.3, TrickSpd: 3.2 } },
+                { name: "Frontrunner Engine", stats: { T3: 1, StartBoost: 15, CoinBoostSpd: 10, CoinBoostTime: 0.5, StartCoins: 1, MaxCoinsSpd: -1, DriftSteer: 1.4, Speed: -0.2 } },
+                { name: "Spooky Engine", stats: { T1: 0.6, StartBoost: 10, Speed: 0.6, TrickSpd: 3 } },
+                { name: "Heavyweight Engine", stats: { CoinBoostSpd: 5, CoinBoostTime: 0.5, StartCoins: 2, MaxCoins: 5, MaxCoinsSpd: 0.8, DriftSteer: -4.5, Steer: -3.5, Speed: 1.3, SlowAreaPenalty: 50, TrickSpd: -3 } },
+                { name: "Vulcan Engine", stats: { DriftRate: 2.5, T3: 1, StartCoins: -1, MaxCoins: 0.5, DriftSteer: -0.5, Steer: -2, Speed: 0.5, SlowAreaPenalty: 100 } },
+                { name: "No Coiner Engine", stats: { T2: 1.5, T3: 1, CoinBoostSpd: -10, MaxCoins: -2, MaxCoinsSpd: -5.2, Speed: 3.2, TrickSpd: 4 } },
+                { name: "Piggybank Engine", stats: { StartCoins: 2, MaxCoins: 10, MaxCoinsSpd: 4.5, Speed: -2.7 } },
+                { name: "Scrap Engine", stats: { T1: 0.4, T2: 0.5, T3: 0.5, TrickSpd: 3.5 } },
+                { name: "Silver Engine", stats: { T1: 0.5, T2: 0.7, T3: 1.4 } },
+                { name: "Snail Engine", stats: { BoostPads: 10, Speed: -2.5, Steer: 50, AirDriftTime: -30, DriftRate: 8, SlowAreaPenalty: 18, Daze: 30, UltCharge: 7, SlipStreamRadius: 0.8 } },
+                { name: "Starter Engine", stats: { T1: 0.8, CoinBoostTime: 1, DriftSteer: 0.6, Speed: 0.6 } }
             ],
             EXHAUST: [
                 { name: "Acrobatic Exhaust", stats: { CoinBoostTime: 1, DriftSteer: 1.2, Steer: 1.2, AirDriftTime: 0.13, TrickSpd: 2 } },
                 { name: "Ice Exhaust", stats: { CoinBoostSpd: 5, CoinBoostTime: 0.6, Speed: 0.5, T1: 0.8, T3: 1 } },
-                { name: "Discharged Exhaust", stats: { Steer: 1.6, Speed: -20, SlowAreaPenalty: 10, SlipStreamSpd: 2.5, TrickSpd: 3.5 } },
+                { name: "Discharged Exhaust", stats: { DriftSteer: 1.6, Speed: -20, SlowAreaPenalty: 10, SlipStreamSpd: 2.5, TrickSpd: 2.5 } },
                 { name: "Cyber Exhaust", stats: { UltCharge: 17, TrickSpd: 3.5 } },
-                { name: "Iron Exhaust", stats: { StartBoost: 10, CoinBoostSpd: -5, CoinBoostTime: 2.5, SlowAreaPenalty: 5, UltCharge: 25, SlipStreamRadius: 3.5, SlipStreamSpd: 1.2, BoostPads: 5, TrickSpd: 3.5 } },
-                { name: "Light Exhaust", stats: { CoinBoostTime: 1, DriftSteer: 0.2, AirDriftTime: 0.15, Speed: 10, Daze: 15, SlipStreamRadius: 3, TrickSpd: 5 } },
-                { name: "Fresh Exhaust", stats: { CoinBoostTime: 5, StartCoins: 0.3, DriftSteer: 0.2, AirDriftTime: 0.1, SlipStreamRadius: 4, SlipStreamSpd: 0.3 } },
+                { name: "Iron Exhaust", stats: { StartBoost: 10, CoinBoostSpd: -5, CoinBoostTime: 2.5, UltCharge: 25, SlipStreamRadius: 3.5, SlipStreamSpd: 1.2, BoostPads: 5, TrickSpd: 3.5 } },
+                { name: "Light Exhaust", stats: { CoinBoostTime: 1, DriftSteer: 0.2, AirDriftTime: 0.15, SlipStreamRadius: 10, Daze: 15, SlipStreamSpd: 3, TrickSpd: 5 } },
+                { name: "Fresh Exhaust", stats: { CoinBoostSpd: 5, CoinBoostTime: 0.3, DriftSteer: 0.2, AirDriftTime: 0.1, SlipStreamRadius: 4, SlipStreamSpd: 0.3 } },
                 { name: "Spooky Exhaust", stats: { CoinBoostTime: -0.5, DriftSteer: 1.6, AirDriftTime: 0.2, UltCharge: 30, SlipStreamRadius: 1, T1: 0.4 } },
                 { name: "Heavy Exhaust", stats: { StartBoost: 1, CoinBoostSpd: 1, CoinBoostTime: 2, StartCoins: 1, BoostPads: 20 } },
                 { name: "Simple Coin Exhaust", stats: { StartCoins: 3, CoinBoostTime: 0.5 } },
@@ -112,63 +112,63 @@
                 { name: "Gold Exhaust", stats: { Steer: 0.25, TrickSpd: 7.5 } }
             ],
             SUSPENSION: [
-                { name: "Acrobatic Suspension", stats: { Speed: -0.6, DriftSteer: 2, Steer: 2, AirDriftTime: 0.25, UltCharge: 5, SlipStreamRadius: 3.5, SlipStreamSpd: 0.5, BoostPads: 10, TrickSpd: 3.5 } },
-                { name: "Advanced Suspension", stats: { DriftSteer: 1.5, Steer: 1.5, AirDriftTime: 0.3, UltCharge: 10, T1: 0.8, T3: 0.5 } },
-                { name: "Ice Suspension", stats: { Speed: 1, CoinBoostSpd: -5, DriftSteer: -1.5, Steer: -1.5, AirDriftTime: 0.2, SlowAreaPenalty: 0.3, T3: 1, TrickSpd: 3 } },
-                { name: "First Charge Suspension", stats: { DriftSteer: 0.5, Steer: 0.5, SlowAreaPenalty: -6, UltCharge: 3, T1: 3.2, T2: -2, T3: -2 } },
-                { name: "Fresh Suspension", stats: {} },
-                { name: "Spooky Suspension", stats: { Speed: 0.2, MaxCoins: 0.8, DriftSteer: 2, Steer: 2, AirDriftTime: 0.1, SlowAreaPenalty: 0.3, Daze: -20, BoostPads: 5, T1: 1, MaxCoinsSpd: 2 } },
-                { name: "Slime Suspension", stats: { StartBoost: 8, MaxCoins: 1, UltCharge: 10, SlipStreamRadius: 5.5, T1: 1.6, T2: 0.5, T3: -0.5 } },
-                { name: "Locked Suspension", stats: { Steer: 1.2, SlowAreaPenalty: 60 } },
-                { name: "No Drift Suspension", stats: { Speed: 2, CoinBoostSpd: 5, DriftSteer: -5, Steer: 30, UltCharge: 10, DriftRate: -0.6, T2: -0.8, T3: -1.2, MaxCoinsSpd: -5 } },
-                { name: "Peanutician Suspension", stats: { MaxCoins: 2.2, DriftSteer: 1, AirDriftTime: 0.6, T1: 0.8, MaxCoinsSpd: 2.2 } },
-                { name: "Snail Suspension", stats: { MaxCoins: -1, SlowAreaPenalty: -10, UltCharge: 3, BoostPads: 10 } },
-                { name: "Starter Suspension", stats: { MaxCoins: 1.2, SlowAreaPenalty: -15, UltCharge: 7, MaxCoinsSpd: 1.2 } },
-                { name: "Train Suspension", stats: { Speed: 1.3, StartBoost: 15, DriftSteer: -2, Steer: -2, AirDriftTime: 0.2, SlowAreaPenalty: 25, UltCharge: 3, BoostPads: 15, T1: 0.3, T2: 0.3, T3: 0.3, MaxCoinsSpd: -2 } },
-                { name: "Polished Suspension", stats: { Speed: 0.5, MaxCoins: 0.5, SlowAreaPenalty: -15, BoostPads: 5 } }
+                { name: "Acrobatic Suspension", stats: { BoostPads: 10, CoinBoostSpd: 5, DriftSteer: 2, Steer: 2, AirDriftTime: 0.25, Speed: -0.6, UltCharge: 5, SlipStreamSpd: 3.5, SlipTime: 0.5, TrickSpd: 3.5 } },
+                { name: "Advanced Suspension", stats: { T1: 0.8, T3: 0.5, DriftSteer: 1.5, Steer: 1.5, AirDriftTime: 0.3, UltStart: 10 } },
+                { name: "Ice Suspension", stats: { T2: 1, StartBoost: -5, DriftSteer: -1.5, Steer: -1.5, AirDriftTime: 0.2, Speed: 1, SlowAreaPenalty: 0.3, TrickSpd: 3 } },
+                { name: "First Charge Suspension", stats: { T1: 3.2, T2: -2, T3: -2, DriftSteer: 0.5, Steer: 0.5, Daze: -6, UltCharge: 3 } },
+                { name: "Fresh Suspension", stats: { } },
+                { name: "Spooky Suspension", stats: { BoostPads: 5, T1: 1, MaxCoinsSpd: 0.8, DriftSteer: 2, Steer: 2, AirDriftTime: 0.1, Speed: 0.2, SlowAreaPenalty: 0.3, Daze: -20 } },
+                { name: "Slime Suspension", stats: { T1: 1.6, T2: 0.5, T3: -0.5, StartBoost: 8, StartCoins: 1, SlipStreamSpd: 10, SlipTime: 5.5 } },
+                { name: "Locked Suspension", stats: { Speed: 1.2, Daze: 60 } },
+                { name: "No Drift Suspension", stats: { T1: -0.6, T2: -0.8, T3: -1.2, CoinBoostSpd: 5, DriftSteer: -5, Steer: 30, Speed: 2, Daze: 10 } },
+                { name: "Peanutician Suspension", stats: { T1: 0.8, DriftSteer: 2.2, Steer: 2.2, AirDriftTime: 1, SlowAreaPenalty: 0.6 } },
+                { name: "Snail Suspension", stats: { BoostPads: 10, DriftSteer: -1, Steer: -1, Daze: -10, UltCharge: 3 } },
+                { name: "Starter Suspension", stats: { DriftSteer: 1.2, Steer: 1.2, Daze: -15, UltStart: 7 } },
+                { name: "Train Suspension", stats: { BoostPads: 15, T1: 0.3, T2: 0.3, T3: 0.3, StartBoost: 15, DriftSteer: -2, Steer: -2, AirDriftTime: 0.2, Speed: 1.3, Daze: 25, UltCharge: 3 } },
+                { name: "Polished Suspension", stats: { BoostPads: 5, DriftSteer: 0.5, Steer: 0.5, Speed: 0.5, Daze: -15 } }
             ],
             GEARBOX: [
-                { name: "Advanced Gearbox", stats: { DriftSteer: 0.5, T1: 1, T2: 0.6, T3: 1.5 } },
-                { name: "Chaotic Gearbox", stats: { UltCharge: -10, T1: -1.6, T2: 3.2, T3: -2 } },
-                { name: "Gamers Gearbox", stats: { AirDriftTime: 0.4, T1: -1, T2: 0.5, T3: 1.85 } },
-                { name: "Fresh Gearbox", stats: { AirDriftTime: 0.1, T1: 0.3, T2: 0.4, T3: 0.6 } },
-                { name: "The Front Runner", stats: { StartBoost: 12, T1: 0.4, T2: 0.7, T3: 1.2 } },
+                { name: "Advanced Gearbox", stats: { T1: 1, T2: 0.6, T3: 1.5, DriftSteer: 0.5 } },
+                { name: "Chaotic Gearbox", stats: { T1: -1.6, T2: 3.2, T3: -2, Daze: -10 } },
+                { name: "Gamers Gearbox", stats: { T1: -1, T2: 0.5, T3: 1.85, AirDriftTime: 0.4 } },
+                { name: "Fresh Gearbox", stats: { T1: 0.3, T2: 0.4, T3: 0.6, AirDriftTime: 0.1 } },
+                { name: "The Front Runner", stats: { T1: 0.4, T2: 0.7, T3: 1.2, StartBoost: 12 } },
                 { name: "Grass Gearbox", stats: { T1: 0.4, T2: 0.5, T3: 1 } },
-                { name: "Spooky Gearbox", stats: { AirDriftTime: 0.1, T1: 0.4, T2: 2, T3: 0.6 } },
-                { name: "Dragon Head Gearbox", stats: { StartBoost: 5, CoinBoostTime: 1, StartCoins: 1, T1: 1.8, T3: 1 } },
-                { name: "Efficient Gearbox", stats: { StartBoost: 10, DriftSteer: -0.5, Steer: -0.5, AirDriftTime: 0.5, UltCharge: 20, SlipStreamRadius: 3.5, BoostPads: 7.5, T1: 2.1, T2: 1, T3: -1.2, MaxCoinsSpd: -0.5, TrickSpd: 2.5 } },
-                { name: "Ice Gearbox", stats: { StartCoins: 1, MaxCoins: 1, DriftSteer: 1 } },
-                { name: "No Drift Gearbox", stats: { Speed: 2.5, SlowAreaPenalty: -12, UltCharge: 20, SlipStreamRadius: 10, SlipStreamSpd: 3.5, T1: -0.8, T2: -1, T3: -2, SlipTime: 1 } },
-                { name: "Razor Gearbox", stats: { DriftSteer: -0.5, Steer: -0.5, T1: 1.4, T3: 0.4 } },
-                { name: "Recovery Gold Gearbox", stats: { SlowAreaPenalty: -30, T1: 1.8 } },
-                { name: "Marine Gearbox", stats: { SlowAreaPenalty: -20, T1: 1.2 } },
-                { name: "Starter Gearbox", stats: { StartBoost: 1, DriftSteer: 1, Steer: 1, DriftRate: -0.025, T2: 0.4, T3: 0.5 } },
-                { name: "Hasty Gearbox", stats: { DriftRate: 0.025, T1: -1.6, T2: 2, T3: 1.35 } },
+                { name: "Spooky Gearbox", stats: { T1: 0.4, T2: 2, T3: 0.6, AirDriftTime: 0.1 } },
+                { name: "Dragon Head Gearbox", stats: { T1: 1.8, T3: 1, StartBoost: 5, CoinBoostTime: 1, StartCoins: 1 } },
+                { name: "Efficient Gearbox", stats: { BoostPads: 7.5, T1: 2.1, T2: 1, T3: -1.2, StartBoost: 10, DriftSteer: -0.5, Steer: -0.5, Speed: 0.5, SlipStreamSpd: 20, SlipTime: 3.5, TrickSpd: 2.5 } },
+                { name: "Ice Gearbox", stats: { DriftSteer: 1, Steer: 1, Speed: 1 } },
+                { name: "No Drift Gearbox", stats: { T1: -0.8, T2: -1, T3: -2, Speed: 2.5, Daze: -12, UltStart: 20, SlipStreamSpd: 10, SlipTime: 3.5, TrickSpd: 1 } },
+                { name: "Razor Gearbox", stats: { T1: 1.4, T3: 0.4, DriftSteer: -0.5, Steer: -0.5 } },
+                { name: "Recovery Gold Gearbox", stats: { T1: 1.8, Daze: -30 } },
+                { name: "Marine Gearbox", stats: { T1: 1.2, Daze: -20 } },
+                { name: "Starter Gearbox", stats: { DriftRate: -2.5, T1: 0.4, T2: 0.5, T3: 1, DriftSteer: 1, Steer: 1 } },
+                { name: "Hasty Gearbox", stats: { DriftRate: 2.5, T1: -1.6, T2: 2, T3: 1.35 } },
                 { name: "Ancient Gearbox", stats: { T1: 0.85, T2: 1.3, T3: 1.1 } },
-                { name: "Polished Gearbox", stats: { DriftRate: 0.1, T1: -0.8, T2: -1, T3: -1 } }
+                { name: "Polished Gearbox", stats: { DriftRate: 10, T1: -0.8, T2: -1, T3: -1 } }
             ],
             TRINKET: [
-                { name: "Electronic Key", stats: { DriftSteer: 0.5, Steer: 0.5, UltCharge: 5, SlipStreamRadius: 10, SlipStreamSpd: 3, UltStart: 3 } },
-                { name: "Gold Tags", stats: { StartCoins: 1, SlipStreamRadius: 20, BoostPads: 15, T3: 1 } },
-                { name: "Skull Collar", stats: { StartBoost: -15, MaxCoins: 5, Daze: -10, UltCharge: 5, MaxCoinsSpd: 0.8 } },
+                { name: "Electronic Key", stats: { DriftSteer: 0.5, Steer: 0.5, UltCharge: 5, SlipStreamSpd: 10, SlipTime: 3 } },
+                { name: "Gold Tags", stats: { BoostPads: 15, T3: 1, StartCoins: 1, SlipStreamSpd: 20 } },
+                { name: "Skull Collar", stats: { StartBoost: -15, MaxCoins: 5, MaxCoinsSpd: 0.8, Daze: -10, UltCharge: 5 } },
                 { name: "Turtle Trinket", stats: { CoinBoostSpd: 10, CoinBoostTime: 1, DriftSteer: 2, Steer: 2, UltCharge: 3, TrickSpd: 2 } },
-                { name: "Tank Trinket", stats: { StartBoost: -5, Speed: 0.4, DriftSteer: -2, SlowAreaPenalty: -20, Daze: 5, T2: 1, T3: 1, MaxCoinsSpd: 0.4 } },
-                { name: "Capytulator", stats: { Daze: 60, UltCharge: 5, BoostPads: 17.5, MaxCoinsSpd: 0.5 } },
+                { name: "Tank Trinket", stats: { T2: 1, T3: 1, StartBoost: -5, MaxCoinsSpd: 0.4, DriftSteer: -2, Speed: 0.4, SlowAreaPenalty: -20, Daze: 5 } },
+                { name: "Capytulator", stats: { BoostPads: 17.5, MaxCoinsSpd: 0.5, Daze: 60, UltCharge: 5 } },
                 { name: "Air Freshener", stats: { T1: 1.6, TrickSpd: 8 } },
                 { name: "Fast Runner", stats: { T1: 1.6 } },
-                { name: "Cauldron", stats: { CoinBoostTime: 0.5, Speed: 1, T1: 0.5, T2: 0.4, T3: 0.3 } },
-                { name: "Fire Keys", stats: { StartCoins: 1, MaxCoins: 1, SlowAreaPenalty: -20, UltCharge: 10, SlipStreamRadius: 15, SlipStreamSpd: 5.5, T1: 0.8, T2: 0.4, T3: 0.4, MaxCoinsSpd: 0.5, UltStart: 10 } },
-                { name: "Lucky Dice", stats: { StartBoost: 8, StartCoins: 2, UltCharge: 15, SlipStreamRadius: 12, SlipStreamSpd: 20, T1: 1.6, UltStart: 15, SlipTime: 1 } },
+                { name: "Cauldron", stats: { T1: 0.5, T2: 0.4, T3: 0.3, CoinBoostTime: 0.5, Speed: 1 } },
+                { name: "Fire Keys", stats: { T1: 0.8, T2: 0.4, T3: 0.4, StartCoins: 1, MaxCoins: 1, MaxCoinsSpd: 0.5, SlowAreaPenalty: -20, SlipStreamRadius: 10, SlipStreamSpd: 15, SlipTime: 5.5 } },
+                { name: "Lucky Dice", stats: { T1: 1.6, StartBoost: 8, StartCoins: 2, SlipStreamRadius: 15, SlipStreamSpd: 12, SlipTime: 20, TrickSpd: 1 } },
                 { name: "Inheritance", stats: { StartCoins: 5, MaxCoinsSpd: -0.5 } },
                 { name: "Voodoo", stats: { MaxCoins: -1 } },
-                { name: "Community Card", stats: { CoinBoostTime: 0.5, AirDriftTime: 0.07, Speed: 0.25, BoostPads: 5, T1: 0.6, T2: 0.4, T3: 0.5, MaxCoinsSpd: 0.25 } },
-                { name: "Ducky", stats: { SlowAreaPenalty: -20, SlipStreamRadius: 25, SlipStreamSpd: 6.5, SlipTime: 3 } },
-                { name: "Anchor", stats: { SlowAreaPenalty: 50, Daze: -20, BoostPads: 10, UltStart: 10 } },
-                { name: "Disco Ball", stats: { CoinBoostSpd: 15, CoinBoostTime: 0.5, BoostPads: 12, TrickSpd: 3 } },
-                { name: "Starter Keys", stats: { UltCharge: 15, BoostPads: 10, T1: 0.8, UltStart: 15 } },
-                { name: "Toxic Tag", stats: { Speed: 0.2, SlowAreaPenalty: -30, UltCharge: 4, DriftRate: -8, T3: 1.5, MaxCoinsSpd: 0.2, DriftSteer: -1, Steer: -1 } },
-                { name: "Tourney Tag", stats: { StartBoost: 15, CoinBoostTime: 1.8, Speed: 0.2, UltCharge: 15, UltStart: 15, TrickSpd: 2 } },
-                { name: "Water Rider", stats: { DriftSteer: 1, Steer: 1, SlowAreaPenalty: 80, Daze: -10, UltCharge: -20, SlipStreamSpd: 6.5, BoostPads: 5, SlipTime: 1.5, TrickSpd: 2.5 } }
+                { name: "Community Card", stats: { BoostPads: 5, T1: 0.6, T2: 0.4, T3: 0.5, CoinBoostTime: 0.5, MaxCoinsSpd: 0.25, AirDriftTime: 0.07, Speed: 0.25 } },
+                { name: "Ducky", stats: { SlowAreaPenalty: -20, SlipStreamSpd: 25, SlipTime: 6.5, TrickSpd: 3 } },
+                { name: "Anchor", stats: { BoostPads: 10, SlowAreaPenalty: 50, Daze: -20, SlipStreamRadius: 10 } },
+                { name: "Disco Ball", stats: { BoostPads: 12, CoinBoostSpd: 15, CoinBoostTime: 0.5, TrickSpd: 3 } },
+                { name: "Starter Keys", stats: { BoostPads: 10, T1: 0.8, SlipStreamRadius: 15 } },
+                { name: "Toxic Tag", stats: { DriftRate: -8, T3: 1.5, MaxCoinsSpd: 0.2, DriftSteer: -1, Steer: -1, Speed: 0.2, SlowAreaPenalty: -30, UltCharge: 4 } },
+                { name: "Tourney Tag", stats: { StartBoost: 15, CoinBoostTime: 1.8, Speed: 0.2, SlipStreamRadius: 15, TrickSpd: 2 } },
+                { name: "Water Rider", stats: { BoostPads: 5, DriftSteer: 1, Steer: 1, SlowAreaPenalty: 80, Daze: -10, UltCharge: -20, SlipTime: 6.5, TrickSpd: 2.5 } }
             ]
         };
 
@@ -241,7 +241,7 @@
                                 <div key={key} className="flex justify-between items-center group">
                                     <span className="text-[11px] font-semibold text-slate-400 group-hover:text-slate-200 transition-colors uppercase truncate mr-2">{key}</span>
                                     <span className={`font-mono ${color} font-bold text-xs`}>
-                                        {(totals[key] || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}{unit}
+                                        {(totals[key] || 0).toFixed(2)}{unit}
                                     </span>
                                 </div>
                             ))}
@@ -304,7 +304,7 @@
                                             <div key={slot} className="bg-slate-900/40 border border-slate-800 rounded-3xl overflow-hidden transition-all hover:border-indigo-500/30 ring-1 ring-white/5 shadow-2xl group">
                                                 <div className="bg-slate-800/30 px-6 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-800">
                                                     <div className="flex items-center gap-4 w-full sm:w-auto">
-                                                        <span className="px-4 py-1.5 bg-indigo-600 rounded-xl text-[10px] font-black tracking-widest text-white uppercase italic shadow-lg shadow-indigo-600/30">
+                                                        <span className="px-4 py-1.5 bg-indigo-600 rounded-xl text-[10px] font-black tracking-widest text-white uppercase italic shadow-lg shadow-indigo-600/20">
                                                             {slot.replace('_', ' ')}
                                                         </span>
                                                         <div className="flex-1 sm:flex-none relative">
